@@ -2,16 +2,4 @@ version: "3.9"
 services:
   email_backend:
     build: .
-    image: jackeung451/email:0.0.1
-    environment:
-      BOOTSTRAP_SERVERS: pkc-4r087.us-west2.gcp.confluent.cloud:9092
-      SECURITY_PROTOCOL: SASL_SSL
-      SASL_USERNAME: T7FX5DMAEC4WND2R
-      SASL_PASSWORD: T05y4T3gGxkBrSNRTT/96//x3tKGrkhVv9mrAvC8dLIG6RKLwPwLZcDTNYDaOBuw
-      SASL_MECHANISMS: PLAIN
-      GROUP_ID: myGroup
-      KAFKA_TOPIC:
-      EMAIL_HOST:
-      EMAIL_PORT:
-      EMAIL_USERNAME:
-      EMAIL_PASSWORD:
+    image: jackieung451/email:0.0.1

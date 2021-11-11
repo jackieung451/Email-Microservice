@@ -39,9 +39,9 @@ while True:
 
     send_mail(
         subject='An Order has been completed',
-        message='You earned $' + str(order['agent_revenue']) + ' from the link #' + order.code,
+        message='You earned $' + str(order['ambassador_revenue']) + ' from the link #' + order.code,
         from_email='from@email.com',
-        recipient_list=[order['agent_email']]
+        recipient_list=[order['ambassador_email']]
     )
 
 consumer.close()
